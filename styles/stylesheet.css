@@ -1,3 +1,9 @@
+/* WILDCARD BOXES */
+
+* {
+	border: 0.5px dotted red;
+}
+
 /* BODY */
 	body {
 		font-family: Helvetica, sans-serif;
@@ -8,6 +14,7 @@
 	}
 
 /* NAVBAR */
+
 	.top_menu {height: 20px; width: 20px;}
 	.profile_pic {
 		height: 35px; width: 35px;
@@ -41,36 +48,13 @@
 		color: #6b6b6b;
 	}
 
-/* SEARCH AREA */
-
-	body #search_canvas {
-		display: table;
-		position: absolute;
-		height: 100%; 
-		width: 100%;
-	}
-
-	#search_canvas #search_middle {
-		display: table-cell;
-		vertical-align: middle;
-	}
-
-	#search_area {
-		width: 45%;
+	#logo{
+		width: 120px;
 		height: auto;
-		margin: 0 auto;
-		padding: 10px;
-		position: relative;
-		margin: 0 center;
-	}
-
-	#search_area img{
-		display: block;
-		margin: 0 auto;
 	}
 
 	form input {
-		display: block;
+		display: inline-block;
 		margin: 20px auto;
 		border: 1px solid #dddddd;
 		width: 85%;
@@ -88,29 +72,12 @@
 		outline: none;
 	}
 
-	div .button {
-		display: inline-block;
-		padding: 10px;
-		background-color: #f8f8f8;
-		text-align: center;
-		vertical-align: middle;
-		border-radius: 2px;
-		color: grey;
-		margin: 0 2px;
-	}
+/* SEARCH AREA */
 
-	div .button:hover {
-		color: black;
-		border: 1px solid #c9c9c9;
-		box-shadow: 0px 1px 1px 0px #b0b0b0;
-		cursor: default;
-	}
 
-	.button_group {
-		text-align: center;
-	}
 
 /* FOOTER */
+
 	#footer {
 		position: absolute;
 		bottom: 0;
