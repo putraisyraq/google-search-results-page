@@ -1,24 +1,17 @@
 /* WILDCARD BOXES */
 
-* {
-	border: 0.5px dotted red;
-}
+img, form, #l_navbar, ul {
+	border: 0.5px solid pink;
+}*/
 
-/* BODY */
+/* UNIVERSAL */
+
 	body {
 		font-family: Helvetica, sans-serif;
 		font-size: 0.8em;
 		color: #222;
 		margin: 0;
 		padding: 0;
-	}
-
-/* NAVBAR */
-
-	.top_menu {height: 20px; width: 20px;}
-	.profile_pic {
-		height: 35px; width: 35px;
-		border-radius: 50%;
 	}
 
 	ul {
@@ -48,33 +41,82 @@
 		color: #6b6b6b;
 	}
 
+/* NAVBAR */
+
+/* NAVBAR_TOP_RIGHT */
+
+	.top_menu {height: 20px; width: 20px;}
+	.profile_pic {
+		height: 35px; width: 35px;
+		border-radius: 50%;
+	}
+
+
+
+
+
+/* NAVBAR_TOP_LEFT */
+
+	#l_navbar {
+		vertical-align: middle;
+		padding: 10px;
+		float: left;
+		width: 70%
+	}
+
 	#logo{
 		width: 120px;
 		height: auto;
+		vertical-align: middle;
+		margin-right: 10px;
+	}
+
+
+	form {
+		display: inline-block;
+		vertical-align: middle;
+		width: 60%;
+		position: relative;
 	}
 
 	form input {
-		display: inline-block;
-		margin: 20px auto;
+		margin: 0 auto;
 		border: 1px solid #dddddd;
-		width: 85%;
+		width: calc(100% - 67px);
+		padding: 0 50px 0 15px;
 		height: 40px;
-		font-size: 1.9em;
-		padding: 0 15px 0 15px;
+		font-size: 1.5em;
 	}
 
 	form input:focus {
 		box-shadow: 0px 2px 8px #dddddd;
 		outline: none;
 	}
+
 	form input:hover {
 		box-shadow: 0px 2px 8px #dddddd;
 		outline: none;
 	}
 
-/* SEARCH AREA */
+	button {
+		height: auto;
+		display: inline-block;
+		cursor: pointer;
+		vertical-align: middle;
+		position: absolute;
+		right: 0;
+		top: 3px;
 
+		padding: 5px 10px 5px 10px;
+		border-width: 0;
+		background-color: inherit;
+	}
 
+/* MID_SECTION */
+
+	#results {
+		clear: both;
+	}
 
 /* FOOTER */
 
